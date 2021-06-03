@@ -21,13 +21,22 @@ namespace PicGallery
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form1 f1 = new Form1();
-            f1.Show();
+            try
+            {
+                this.Hide();
+                Form1 f1 = new Form1();
+                f1.Show();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Ошибка перехода на форму.");
+
+            }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+            private void pictureBox1_Click(object sender, EventArgs e)
         {
+            try { 
             int halfAdd = 20; // половина от того на сколько изображение увеличится
             if (isSmall)
             {
@@ -44,6 +53,11 @@ namespace PicGallery
             }
             isSmall = !isSmall;
             pictureBox1.BringToFront(); // передний план
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error " + ex.Message);
+            }
         }
     }
 }
