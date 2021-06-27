@@ -23,8 +23,8 @@ namespace PicGallery
             try
             {
                 this.Hide();
-                Form1 f1 = new Form1();
-                f1.Show();
+                Form2 f2 = new Form2();
+                f2.Show();
             }
             catch (Exception)
             {

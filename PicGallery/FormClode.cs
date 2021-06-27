@@ -53,7 +53,7 @@ namespace PicGallery
                     pictureBox1.Width -= 10 * halfAdd;
                 }
                 isSmall = !isSmall;
-                pictureBox1.BringToFront(); // передний план }
+                pictureBox1.BringToFront(); // передний план
 
             }
             catch (Exception ex)

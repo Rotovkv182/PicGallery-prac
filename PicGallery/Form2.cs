@@ -10,19 +10,35 @@ using System.Windows.Forms;
 
 namespace PicGallery
 {
-    public partial class Form1 : Form
+    public partial class Form2 : Form
     {
-        public Form1()
+        public Form2()
         {
             InitializeComponent();
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            try { 
-            this.Hide();
-            FormKazimir fb = new FormKazimir();
-            fb.Show();
+            try
+            {
+                this.Hide();
+                FormDali FD = new FormDali();
+                FD.Show();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Ошибка перехода на форму.");
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+
+        {
+            try
+            {
+                this.Hide();
+                FormPablo fb = new FormPablo();
+                fb.Show();
             }
             catch (Exception)
             {
@@ -31,12 +47,13 @@ namespace PicGallery
 
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-            try { 
-            this.Hide();
-            FormClode fb = new FormClode();
-            fb.Show();
+            try
+            {
+                this.Hide();
+                FormEdward fb = new FormEdward();
+                fb.Show();
             }
             catch (Exception)
             {
@@ -47,39 +64,11 @@ namespace PicGallery
 
         private void button4_Click(object sender, EventArgs e)
         {
-            try { 
-            this.Hide();
-            FormVincent fb = new FormVincent();
-            fb.Show();
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Ошибка перехода на форму.");
-            }
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                afishaform af = new afishaform();
-                af.Show();
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Ошибка перехода на форму.");
-            }
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
             try
             {
                 this.Hide();
-                Form2 f2 = new Form2();
-                f2.Show();
+                Form1 f1 = new Form1();
+                f1.Show();
             }
             catch (Exception)
             {
