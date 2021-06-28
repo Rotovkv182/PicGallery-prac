@@ -49,6 +49,7 @@ namespace PicGallery
             this.btn_upd = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.btn_excel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pg_afishaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.afishaBindingSource)).BeginInit();
@@ -251,12 +252,28 @@ namespace PicGallery
             this.label7.TabIndex = 15;
             this.label7.Text = "Афиша";
             // 
+            // btn_excel
+            // 
+            this.btn_excel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
+            this.btn_excel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_excel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_excel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btn_excel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_excel.Location = new System.Drawing.Point(678, 22);
+            this.btn_excel.Name = "btn_excel";
+            this.btn_excel.Size = new System.Drawing.Size(144, 32);
+            this.btn_excel.TabIndex = 16;
+            this.btn_excel.Text = "Вывод в Excel";
+            this.btn_excel.UseVisualStyleBackColor = false;
+            this.btn_excel.Click += new System.EventHandler(this.btn_excel_Click);
+            // 
             // afishaform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
             this.ClientSize = new System.Drawing.Size(834, 466);
+            this.Controls.Add(this.btn_excel);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btn_upd);
@@ -305,5 +322,6 @@ namespace PicGallery
         private System.Windows.Forms.Button btn_upd;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btn_excel;
     }
 }
